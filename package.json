@@ -1,0 +1,59 @@
+{
+  "name": "ramp",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev:front": "cross-env NODE_ENV=development webpack-dev-server --mode development",
+    "build:front": "cross-env NODE_ENV=production webpack --mode production",
+    "postinstall": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/node": "^7.2.2",
+    "@babel/register": "^7.4.4",
+    "connect-redis": "^3.4.1",
+    "debug": "~2.6.9",
+    "dotenv": "^7.0.0",
+    "express": "~4.16.0",
+    "express-handlebars": "~3.0.0",
+    "express-session": "^1.16.1",
+    "http-errors": "~1.6.2",
+    "ignore-styles": "^5.0.1",
+    "morgan": "~1.9.0",
+    "react": "next",
+    "react-dom": "next",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "rest-facade": "^1.10.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
+  },
+  "engines": {
+    "node": "~10.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^2.0.0",
+    "cssnano": "^4.1.7",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.1.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.5"
+  }
+}

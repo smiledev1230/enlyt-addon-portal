@@ -1,0 +1,26 @@
+{
+  "id": "ramp",
+  "api": {
+    "test": {
+      "sso_url": "http://127.0.0.1:8080/heroku/sso",
+      "base_url": "http://127.0.0.1:3000/addon/graph-visualizer/heroku/resources"
+    },
+    "regions": [
+      "us"
+    ],
+    "password": "edf79de6c9cb81daa7590c2f34b98c76",
+    "requires": [
+
+    ],
+    "sso_salt": "8ed62c7823a40cf3209b19afb0885467",
+    "production": {
+      "sso_url": "https://ramp.trifinlabs.com/heroku/sso",
+      "base_url": "https://oikdlvpk78.execute-api.us-east-1.amazonaws.com/dev/addon/ramp/heroku/resources"
+    },
+    "config_vars": [
+      "RAMP_LICENSE_KEY"
+    ]
+  },
+  "name": "RAMP",
+  "$base": 154413317369806
+}

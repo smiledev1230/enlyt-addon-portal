@@ -1,0 +1,16 @@
+image: node:10.4.1
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+        caches:
+          - node
+  branches:
+    master:
+      - step:
+          name: Deploy to Heroku
+          deployment: production   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          script:
+            - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/enlyt-health-addon-portal.git HEAD
