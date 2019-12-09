@@ -10,6 +10,8 @@
     "postinstall": "cross-env NODE_ENV=production webpack --mode production"
   },
   "dependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/node": "^7.2.2",
@@ -35,8 +37,6 @@
     "node": "~12.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.5",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^4.6.0",
     "cross-env": "^5.2.1",
